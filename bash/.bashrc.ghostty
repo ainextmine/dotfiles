@@ -1,0 +1,13 @@
+# Ghostty 終端相容性設定
+# 當其他人使用 Ghostty 連線進來時的處理
+
+# 如果 TERM 是 ghostty 但系統不支援，改用相容的設定
+if [ "$TERM" = "ghostty" ] && ! infocmp ghostty >/dev/null 2>&1; then
+    export TERM=xterm-256color
+    echo "提示: Ghostty 終端已自動切換為 xterm-256color 模式"
+fi
+
+# 為 tmux 設定適當的終端覆蓋
+if [ -n "$TMUX" ] && [ "$TERM" = "ghostty" ]; then
+    tmux set-option -ga terminal-overrides ",ghostty:Tc"
+fi

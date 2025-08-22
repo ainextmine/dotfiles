@@ -1,0 +1,55 @@
+# Swap files
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+.env.*
+
+# Sensitive data
+.git-credentials
+**/credentials
+**/id_*
+**/authorized_keys
+*.pem
+*.key
+
+# Cache and history
+.python_history
+.bash_history
+.zsh_history
+.psql_history
+.rediscli_history
+.lesshst
+.viminfo
+
+# Docker credentials
+docker/config.json
+
+# AWS credentials
+aws/credentials
+aws/config
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python

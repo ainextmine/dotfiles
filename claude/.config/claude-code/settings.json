@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "secret_7HDQxEjmnoqNNpslghPWGrDQluhmSMn9RuaojYMp9lC"
+      }
+    },
+    "n8n": {
+      "command": "node",
+      "args": ["/home/ubuntu/DevOps/n8n-mcp-server/build/index.js"],
+      "env": {
+        "N8N_API_URL": "https://n8n.aidatamine.com.tw/api/v1",
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2N2U3MTI3ZC04MWY5LTRkZTgtYTVlMC02MGUzZWQxNzVjNTgiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzUxNTEyMjAzLCJleHAiOjE3NTQwMjA4MDB9.ZrwxLrIs-wjHv9wLMjdMvdL2GVXOKazATu2HdKCeNGA"
+      }
+    }
+  }
+}
